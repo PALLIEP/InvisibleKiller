@@ -1,0 +1,21 @@
+death:
+  entity_attack:
+    - "%player% was slain by an unseen force"
+    - "%player% fell to an invisible blade"
+  projectile:
+    - "%player% was struck by an invisible projectile"
+  fall:
+    - "%player% fell while fleeing an unknown force"
+  lava:
+    - "%player% died in lava under mysterious circumstances"
+  fire:
+    - "%player% suddenly burst into flames"
+  explosion:
+    - "%player% was torn apart by a mysterious explosion"
+  default:
+    - "%player% died under mysterious circumstances"
+
+command:
+  usage: "Usage: /iklang <lang>"
+  invalid: "Invalid language! Available: ru, en"
+  changed: "Plugin language changed to: %lang%"

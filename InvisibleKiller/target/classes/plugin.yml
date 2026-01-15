@@ -1,0 +1,8 @@
+name: InvisibleKiller
+version: '1.0-SNAPSHOT'
+main: com.pallep.invisibleKiller.InvisibleKiller
+api-version: '1.21'
+commands:
+  iklang:
+    description: Change language
+    usage: /iklang <lang>
