@@ -31,15 +31,19 @@ jobs:
           files: target/*.jar
           generate_release_notes: true
 
-      - name: Upload to Modrinth
+      - name: Publish to Modrinth & CurseForge
         uses: Kir-Antipov/mc-publish@v3
         with:
-          modrinth-id: SZFrOxDw
-          modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
-
           files: target/*.jar
           name: InvisibleKiller ${{ github.ref_name }}
           version: ${{ github.ref_name }}
+
+          modrinth-id: SZFrOxDw
+          modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
+
+          curseforge-id: 1443029
+          curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
+
 
           loaders: |
             paper
@@ -60,4 +64,5 @@ jobs:
             1.21.11
 
           changelog: |
-            See GitHub release: https://github.com/${{ github.repository }}/releases/tag/${{ github.ref_name }}
+            See GitHub release:
+            https://github.com/${{ github.repository }}/releases/tag/${{ github.ref_name }}
